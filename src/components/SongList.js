@@ -29,9 +29,9 @@ class SongList extends React.Component {
 
 // state stores all the data inside of Redux store
 const mapStateToProps = (state) => {
-    console.log(state);
     return { songs: state.songs };
 };
 
+// pass action creator into connect, then conncet automatically call dispatch
 export default connect(mapStateToProps, { selectSong })(SongList);
 
